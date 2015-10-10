@@ -1,0 +1,16 @@
+{
+    "name": "noczcore/ini",
+    "description": "Read and write INI files in PHP.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NoczCore",
+            "email": "noczcore@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    }
+}
