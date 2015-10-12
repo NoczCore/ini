@@ -1,9 +1,10 @@
 <?php
 /**
- * NoczCore
+ * This file is part of NoczCore/Ini.
  *
- * @licence https://opensource.org/licenses/MIT
+ * @author NoczCore <noczcore@gmail.com>
  * @link http://noczcore.github.io
+ * @licence https://opensource.org/licenses/MIT
  */
 
 namespace NoczCore\Ini;
@@ -15,13 +16,26 @@ namespace NoczCore\Ini;
  */
 class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Serializable
 {
+    /**
+     * All items.
+     * @var array
+     */
     private $_items = [];
 
-    public function __construct(array $items)
+    /**
+     * Constructor.
+     * @param array $items Default items.
+     */
+    public function __construct(array $items = [])
     {
         $this->_items = $items;
     }
 
+    /**
+     * Add new item.
+     * @param string $key
+     * @param mixed $value
+     */
     public function set($key, $value)
     {
         $key = trim($key, '.');
@@ -35,6 +49,11 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
         }
     }
 
+    /**
+     * Get an item.
+     * @param string $key
+     * @return array|bool|mixed
+     */
     public function get($key)
     {
         $key = trim($key, '.');
@@ -51,6 +70,11 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
         return false;
     }
 
+    /**
+     * Check if item exist.
+     * @param string $key
+     * @return bool
+     */
     public function has($key)
     {
         $key = trim($key, '.');
@@ -68,9 +92,13 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
         }
     }
 
+    /**
+     * Remove item.
+     * @param string $key
+     * @return bool
+     */
     public function remove($key)
     {
-        $key = trim($key, '.');
         if ($this->has($key)) {
             $this->delete($this->_items, $key);
             return true;
@@ -78,6 +106,11 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
         return false;
     }
 
+    /**
+     * Delete item from an array.
+     * @param array $array
+     * @param string $key
+     */
     private function delete(array &$array, $key)
     {
         $key = trim($key, '.');
@@ -89,11 +122,12 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
         }
     }
 
-    public function getAll()
-    {
-        return $this->_items;
-    }
-
+    /**
+     * Rename item.
+     * @param string $from Actuel key.
+     * @param string $to New key.
+     * @return bool
+     */
     public function rename($from, $to)
     {
         $from = trim($from, '.');
@@ -105,6 +139,15 @@ class IniCollection implements \ArrayAccess, \IteratorAggregate, \Countable, \Se
             return true;
         }
         return false;
+    }
+
+    /**
+     * Get items array.
+     * @return array
+     */
+    public function toArray()
+    {
+        return $this->_items;
     }
 
     /**
