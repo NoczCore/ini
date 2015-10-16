@@ -25,11 +25,11 @@ composer require noczcore/ini
 - Write INI files and INI strings
 - Return a collection instead of a simple array
 - Throws exceptions instead of PHP errors
-- Better type supports:
+- Better type supports ([Exemple](https://github.com/NoczCore/ini#read)):
     * Parse boolean (true/false, on/off, yes/no) to real PHP boolean
     * Parse null to real PHP null
     * Parse int/float to real PHP int/float
-- Advanced parser:
+- Advanced parser ([Exemple](https://github.com/NoczCore/ini#read)):
     * A key with "[]" has an array value with many values
     * A key with "." has an recursive array value with many values
 
@@ -71,7 +71,7 @@ $array = $reader->readFile('config.ini');
 var_dump($array);
 ```
 
-**Return: **
+####Return:
 ```
 Array
 (
