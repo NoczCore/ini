@@ -68,7 +68,7 @@ $array = $reader->readString($string);
 // Read a file
 $array = $reader->readFile('config.ini');
 
-var_dump($array);
+print_r($array->toArray());
 ```
 
 ####Return:
