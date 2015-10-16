@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class NoczCore\Ini\IniCollection</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-NoczCore.Ini.html" title="Summary of NoczCore\Ini"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-NoczCore.html">
+							NoczCore<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-NoczCore.Ini.html">
+							Ini						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-NoczCore.Ini.IniCollection.html">IniCollection</a></li>
+				<li><a href="class-NoczCore.Ini.IniReader.html">IniReader</a></li>
+				<li><a href="class-NoczCore.Ini.IniWriter.html">IniWriter</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-NoczCore.Ini.IniReadingException.html">IniReadingException</a></li>
+				<li><a href="class-NoczCore.Ini.IniWritingException.html">IniWritingException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class IniCollection</h1>
+
+
+	<div class="description">
+	<p>Class IniCollection
+Advanced Array</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+<b><span>NoczCore\Ini\IniCollection</span></b>			
+			 implements 
+<span>ArrayAccess</span>, 
+			
+<span>IteratorAggregate</span>, 
+			
+<span>Countable</span>, 
+			
+<span>Serializable</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NoczCore.html">NoczCore</a>\<a href="namespace-NoczCore.Ini.html">Ini</a><br>
+		<b>Package:</b> NoczCore\Ini<br>
+
+			<b>Located at</b> <a href="source-class-NoczCore.Ini.IniCollection.html#12-265" title="Go to source code">IniCollection.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#25-32" title="Go to source code">__construct</a>( <span>array <var>$items</var> = []</span> )</code>
+
+			<div class="description short">
+				<p>Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$items</var></dt>
+						<dd>Default items.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set" id="_set">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#34-50" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Add new item.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Add new item.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get" id="_get">
+
+			<td class="attributes"><code>
+				 public 
+				array|boolean|mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#52-71" title="Go to source code">get</a>( <span>string <var>$key</var></span> )</code>
+
+			<div class="description short">
+				<p>Get an item.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get an item.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean|mixed
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="has" id="_has">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_has">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#73-93" title="Go to source code">has</a>( <span>string <var>$key</var></span> )</code>
+
+			<div class="description short">
+				<p>Check if item exist.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Check if item exist.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="remove" id="_remove">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_remove">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#95-107" title="Go to source code">remove</a>( <span>string <var>$key</var></span> )</code>
+
+			<div class="description short">
+				<p>Remove item.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Remove item.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="rename" id="_rename">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_rename">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#125-142" title="Go to source code">rename</a>( <span>string <var>$from</var></span>, <span>string <var>$to</var></span> )</code>
+
+			<div class="description short">
+				<p>Rename item.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Rename item.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$from</var></dt>
+						<dd>Actuel key.</dd>
+						<dt><var>$to</var></dt>
+						<dd>New key.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toArray" id="_toArray">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toArray">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#144-151" title="Go to source code">toArray</a>( )</code>
+
+			<div class="description short">
+				<p>Get items array.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get items array.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetExists" id="_offsetExists">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#153-168" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Whether a offset exists</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Whether a offset exists</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><p>
+An offset to check for.
+</p></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br><p>true on success or false on failure.
+</p></p>
+
+<p>&lt;</p>
+
+<p>p>
+The return value will be casted to boolean if non-boolean was returned.</p>
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetexists.php">http://php.net/manual/en/arrayaccess.offsetexists.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetExists()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetGet" id="_offsetGet">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#170-182" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to retrieve</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to retrieve</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><p>
+The offset to retrieve.
+</p></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed<br>Can return all value types.
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetget.php">http://php.net/manual/en/arrayaccess.offsetget.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetGet()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetSet" id="_offsetSet">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#184-199" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to set</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to set</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><p>
+The offset to assign the value to.
+</p></dd>
+						<dt><var>$value</var></dt>
+						<dd><p>
+The value to set.
+</p></dd>
+					</dl></div>
+
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetset.php">http://php.net/manual/en/arrayaccess.offsetset.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetSet()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetUnset" id="_offsetUnset">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#201-213" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to unset</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Offset to unset</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><p>
+The offset to unset.
+</p></dd>
+					</dl></div>
+
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetunset.php">http://php.net/manual/en/arrayaccess.offsetunset.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetUnset()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getIterator" id="_getIterator">
+
+			<td class="attributes"><code>
+				 public 
+				Traversable
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getIterator">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#215-225" title="Go to source code">getIterator</a>( )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Retrieve an external iterator</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.0.0)<br/>
+Retrieve an external iterator</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						Traversable<br><p>An instance of an object implementing <b>Iterator</b> or
+<b>Traversable</b></p>
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/iteratoraggregate.getiterator.php">http://php.net/manual/en/iteratoraggregate.getiterator.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>IteratorAggregate::getIterator()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="count" id="_count">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_count">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#227-239" title="Go to source code">count</a>( )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+Count elements of an object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+Count elements of an object</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br><p>The custom count as an integer.
+</p></p>
+
+<p>&lt;</p>
+
+<p>p>
+The return value is cast to an integer.</p>
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/countable.count.php">http://php.net/manual/en/countable.count.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>Countable::count()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="serialize" id="_serialize">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_serialize">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#241-250" title="Go to source code">serialize</a>( )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+String representation of object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+String representation of object</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>the string representation of the object or null
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/serializable.serialize.php">http://php.net/manual/en/serializable.serialize.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>Serializable::serialize()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="unserialize" id="_unserialize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_unserialize">#</a>
+			<code><a href="source-class-NoczCore.Ini.IniCollection.html#252-264" title="Go to source code">unserialize</a>( <span>string <var>$serialized</var></span> )</code>
+
+			<div class="description short">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+Constructs the object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>(PHP 5 &gt;= 5.1.0)<br/>
+Constructs the object</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$serialized</var></dt>
+						<dd><p>
+The string representation of the object.
+</p></dd>
+					</dl></div>
+
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/serializable.unserialize.php">http://php.net/manual/en/serializable.unserialize.php</a><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>Serializable::unserialize()</code></div>
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
