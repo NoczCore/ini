@@ -105,9 +105,6 @@ class IniReader
     {
         if (is_array($data)) {
             foreach ($data as $k => &$v) {
-                if (strpos($k, '.') !== false) {
-
-                }
                 $v = $this->decode($v, $raw[$k]);
             }
             return $data;
