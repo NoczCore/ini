@@ -11,7 +11,6 @@ Inspired of [Piwik/ini](https://github.com/piwik/component-ini/)
 
 ## Requirements
 
-- PHP >= 5.3.3
 - parse_ini_string is enabled in php.ini
 
 ## Installation
