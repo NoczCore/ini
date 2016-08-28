@@ -1,8 +1,8 @@
 # ini
 Read and write INI files/strings in PHP.
 
-[![Travis branch](https://api.travis-ci.org/NoczCore/ini.svg)](https://travis-ci.org/NoczCore/ini)
-[![Packagist](https://img.shields.io/travis/NoczCore/ini.svg?style=flat-square)](https://packagist.org/packages/noczcore/ini)
+[![Travis branch](https://img.shields.io/travis/NoczCore/ini.svg?style=flat-square)](https://travis-ci.org/NoczCore/ini)
+[![Packagist](https://img.shields.io/packagist/dt/noczcore/ini.svg?style=flat-square)](https://packagist.org/packages/noczcore/ini)
 [![Licence](https://img.shields.io/packagist/l/noczcore/ini.svg?style=flat-square)](https://raw.githubusercontent.com/NoczCore/ini/master/LICENSE)
 [![HHVM (branch)](https://img.shields.io/hhvm/noczcore/ini/master.svg?style=flat-square)](https://travis-ci.org/NoczCore/ini)
 
