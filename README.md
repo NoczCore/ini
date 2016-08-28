@@ -5,6 +5,7 @@ Read and write INI files/strings in PHP.
 [![Packagist](https://img.shields.io/packagist/dt/noczcore/ini.svg?style=flat-square)](https://packagist.org/packages/noczcore/ini)
 [![Licence](https://img.shields.io/packagist/l/noczcore/ini.svg?style=flat-square)](https://raw.githubusercontent.com/NoczCore/ini/master/LICENSE)
 [![HHVM (branch)](https://img.shields.io/hhvm/noczcore/ini/master.svg?style=flat-square)](https://travis-ci.org/NoczCore/ini)
+[PHP 5.3.3 or above](https://img.shields.io/badge/PHP-5.3.3%20or%20above-blue.svg?style=flat-square)]
 
 Inspired of [Piwik/ini](https://github.com/piwik/component-ini/)
 
