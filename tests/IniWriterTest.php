@@ -43,13 +43,13 @@ class IniWriterTest extends \PHPUnit_Framework_TestCase
                     true,
                     false,
                     'name' => [
-                        'James',
-                        'Hemery',
+                        'John',
+                        'Doe',
                         'nickname' => [
                             'NoczCore',
-                            'JamesHemery'
+                            'JohnDoe'
                         ],
-                        'full' => "James Hemery"
+                        'full' => "John Doe"
                     ]
                 ]
             ],
@@ -70,11 +70,11 @@ array[] = "string"
 array[] = 10.3
 array[] = true
 array[] = false
-array.name[] = "James"
-array.name[] = "Hemery"
+array.name[] = "John"
+array.name[] = "Doe"
 array.name.nickname[] = "NoczCore"
-array.name.nickname[] = "JamesHemery"
-array.name.full = "James Hemery"
+array.name.nickname[] = "JohnDoe"
+array.name.full = "John Doe"
 [Section 2]
 foo = "bar"
 
